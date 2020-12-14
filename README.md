@@ -1,7 +1,7 @@
 # Neural Network Charity Analysis
 
 ## Overview
-This project was undertaken to help a non-profit foundation, Alphabet Soup, use Neural Network models to predict successful donation recipients. We used a dataset of over 34,000 organizations that have received funding from Alphabet Soup and built several Neural Network models to find which models better predict successful donations. We start by preprocessing the data so that it can be used in Neural Network models and then compile and train the models and evaluate the accuracy they show.  We then built several additional models, changing the data analyzed and the structure of the models in an effort to increase the accuracy they produce. 
+This project was undertaken to help a non-profit foundation, Alphabet Soup, use Neural Network models to predict successful donation recipients. We used a dataset of over 34,000 organizations that have received funding from Alphabet Soup over the years, and built several Neural Network models to find which models better predict successful donations. We start by preprocessing the data so that it can be used in Neural Network models and then compile and train the models and evaluate the accuracy they show.  We then built several additional models, changing the data analyzed and the structure of the models in an effort to increase the accuracy they produce. 
 
 ## Resources
 
@@ -25,8 +25,8 @@ After preprocessing the dataset, we built a basic Neural Network model, using 2 
 
 ![Original_NNModel_Accuracy](./Resources/Original_NNModel_Accuracy.png) 
 
-Compiling, Training, and Evaluating the Model
-*  We then tried several combinations of neurons, hidden layers and activation functions to improve the accuracy produced. We also attempted removing a noisy variable with a significant amount of dispersion/outliers to improve model performance. We increased the Neurons used, doubling the first hidden layer to 160 and the second hidden layer to 80 to increase the number of iterations through the data our model performed and actually saw a less favorable evaluation, with accuracy dropping to 0.601.
+
+*  We then tried several combinations and iterations of compiling and training models changing the numbers of neurons, hidden layers and activation functions to improve the accuracy produced. We also attempted removing a noisy variable with a significant amount of dispersion/outliers to improve model performance. We increased the Neurons used, doubling the first hidden layer to 160 and the second hidden layer to 80 to increase the number of iterations through the data our model performed and actually saw a less favorable evaluation, with accuracy dropping to 0.601.
 
 ![Attempt_1](./Resources/Attempt_1.png) 
 
@@ -50,7 +50,6 @@ Below is a table of the model construction parameters and accuracy evaluation of
     * changing activation in output layer
 
 ## Summary 
-Summarize the overall results of the deep learning model. Include a recommendation for how a different model could solve this classification problem, and explain your recommendation.
 
 While we did not achieve the target model predictive accuracy of 75%, our efforts did find that using more Neurons (160/60/40) and three hidden layers produced the best results from our attempts. In order to achieve the 75% target predictive accuracy we could try reducing the variability of the 'ASK_AMT' data to filter out some of the outliers that make this data noisy, instead of dropping ASK_AMT entirely.
 We could also try a Random Forrest Classifier model on our dataset, because it may provide higher accuracy and lower prediction error without over-fitting the model.
